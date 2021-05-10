@@ -207,7 +207,7 @@ header.white .hamburger div::after {
 #check {
   position: absolute;
   top: 50%;
-  right: 3.25rem;
+  right: 2rem;
   transform: translateY(-50%);
   width: 2.5rem;
   height: 2.5rem;
