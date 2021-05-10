@@ -53,6 +53,7 @@ const HeroContent = styled.div`
 const arrowButtons = css`
 width:45px;
 height: 45px;
+z-index:15;
 cursor:pointer;
 color:#fff;
 background:#0004a0;
