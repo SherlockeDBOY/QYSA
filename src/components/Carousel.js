@@ -97,7 +97,7 @@ transform: translateY(-50%);
 -o-transform: translateY(-50%);
 z-index:6;
 @media screen and (max-width: 550px) {
-    top: 90%;
+    top: 82.5%;
     justify-content:center;
 }
 `;
