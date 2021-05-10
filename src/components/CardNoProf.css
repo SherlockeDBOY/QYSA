@@ -1,0 +1,165 @@
+.card {
+  width: 325px;
+  height: 450px;
+  min-height: 400px;
+  max-height: 425px;
+  margin: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  text-align: center;
+  box-shadow: 2px 4px 12px rgba(99, 99, 99, 0.5);
+  border: 1px solid rgba(202, 202, 202, 0.4);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 8px;
+  background: rgba(150, 150, 150, 0.25);
+  filter: blur(5px);
+  transition: all 0.4s ease-in-out 0.15s;
+  -webkit-transition: all 0.4s ease-in-out 0.15s;
+  -moz-transition: all 0.4s ease-in-out 0.15s;
+  -ms-transition: all 0.4s ease-in-out 0.15s;
+  -o-transition: all 0.4s ease-in-out 0.15s;
+  z-index: 1;
+  -webkit-filter: blur(5px);
+}
+.card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background: rgb(164, 186, 251);
+  background: linear-gradient(
+    175deg,
+    rgba(164, 186, 251, 1) 11%,
+    rgba(0, 63, 255, 1) 100%
+  );
+  clip-path: circle(0% at 90% 10%);
+  filter: brightness(0.75);
+  transition: all 0.8s ease-in-out 0.2s;
+  z-index: 2;
+  -webkit-transition: all 0.8s ease-in-out 0.2s;
+  -moz-transition: all 0.8s ease-in-out 0.2s;
+  -ms-transition: all 0.8s ease-in-out 0.2s;
+  -o-transition: all 0.8s ease-in-out 0.2s;
+  -webkit-filter: brightness(0.75);
+}
+.card:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.card:hover::after {
+  clip-path: circle(100%);
+}
+.card-content {
+  position: relative;
+  height: 50%;
+  width: 90%;
+  padding: 2rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 5;
+}
+
+.card-img {
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  z-index: 5;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ways-card-title {
+  width: 90%;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--bg-color);
+  font-size: 24px;
+  transition: all 0.8s ease-in-out 0.2s;
+  -webkit-transition: all 0.8s ease-in-out 0.2s;
+  -moz-transition: all 0.8s ease-in-out 0.2s;
+  -ms-transition: all 0.8s ease-in-out 0.2s;
+  -o-transition: all 0.8s ease-in-out 0.2s;
+}
+
+.ways-card-des {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: var(--text-color);
+  transition: all 0.8s ease-in-out 0.2s;
+  -webkit-transition: all 0.8s ease-in-out 0.2s;
+  -moz-transition: all 0.8s ease-in-out 0.2s;
+  -ms-transition: all 0.8s ease-in-out 0.2s;
+  -o-transition: all 0.8s ease-in-out 0.2s;
+}
+
+.ways-card-email {
+  width: 90%;
+  padding: 10px 0;
+}
+
+.ways-card-email a {
+  color: #000;
+  font-size: 20px;
+  transition: all 0.8s ease-in-out 0.2s;
+  -webkit-transition: all 0.8s ease-in-out 0.2s;
+  -moz-transition: all 0.8s ease-in-out 0.2s;
+  -ms-transition: all 0.8s ease-in-out 0.2s;
+  -o-transition: all 0.8s ease-in-out 0.2s;
+}
+
+.card:hover .ways-card-des,
+.card:hover .ways-card-email a {
+  color: #fff !important;
+}
+.card:hover .ways-card-title {
+  color: #fff !important;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 280px;
+  }
+  .card-content {
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card {
+    width: 250px;
+  }
+  .card-content {
+    padding-top: 2.5rem;
+  }
+}
