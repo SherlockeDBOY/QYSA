@@ -24,8 +24,8 @@ function Home() {
     useEffect(() => {
         AOS.init({
             offset: 40,
-            delay: 40,
-            duration: 2500,
+            delay: 0,
+            duration: 1750,
             easing: 'ease-in-out-sine',
             once: false,
             mirror: true,
