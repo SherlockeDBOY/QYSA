@@ -20,7 +20,7 @@ header.white {
 .nav-container {
   position: relative;
   max-width: 98%;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin: 0 auto;
   display: flex;
   height: auto;
@@ -157,7 +157,7 @@ header.white .nav-link > a {
 }
 
 .hamburger-container {
-  margin-inline: 10px;
+  margin-inline: 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -169,6 +169,7 @@ header.white .nav-link > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  display:none;
 }
 .drop-arrow {
   margin-left: 10px;
@@ -207,7 +208,7 @@ header.white .hamburger div::after {
 #check {
   position: absolute;
   top: 50%;
-  right: 1.75rem;
+  right: 1.6rem;
   margin-inline: 10px;
   transform: translateY(-50%);
   width: 2.75rem;
@@ -307,6 +308,9 @@ header.white .hamburger div::after {
   }
   .drop-arrow {
     margin-left: 0px;
+  }
+  .hamburger{
+  display:block
   }
 }
 
