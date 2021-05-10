@@ -98,7 +98,7 @@ transform: translateY(-50%);
 -o-transform: translateY(-50%);
 z-index:6;
 @media screen and (max-width: 550px) {
-    top: 85%
+    top: 85%;
     justify-content:center;
     height:60px;
     z-index:15;
