@@ -138,7 +138,7 @@
 }
 
 /* -------------Border Template------------- */
-.service- .service-container::after {
+.service-container::after {
   content: "";
   z-index: -2;
   position: absolute;
@@ -186,16 +186,7 @@
 
 /* Service CSS End */
 
-/* Learn More Btn Container */
-.learn-more {
-  margin: 50px 0;
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* Learn More Btn Container */
+
 
 /* Video CSS Start */
 
@@ -540,12 +531,12 @@
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    padding: 2rem 4rem;
+    padding: 2rem 20px;
   }
 
   .get-content {
-    height: 100%;
-    padding: 2rem;
+    height: 98%;
+    padding: 2rem 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -555,13 +546,13 @@
   }
   .get-title h2 {
     margin-block: 20px;
-    font-size: 30px;
+    font-size: 24px;
     width: 100%;
   }
   .get-des {
     padding: 0;
-    width: 80%;
-    font-size: 18px;
+    width: 90%;
+    font-size: 14px;
   }
 
   .get-link {
