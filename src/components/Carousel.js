@@ -98,10 +98,11 @@ transform: translateY(-50%);
 -o-transform: translateY(-50%);
 z-index:6;
 @media screen and (max-width: 550px) {
-    bottom: 15%
+    top: 85%
     justify-content:center;
     height:60px;
     z-index:15;
+    width:100%;
 }
 `;
 const PrevArrow = styled(IoArrowBack)`
