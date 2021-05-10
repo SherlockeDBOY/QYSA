@@ -69,6 +69,10 @@ transition: all 0.3s ease-in-out 200ms;
 `;
 
 const ContentBtn = styled.div`
+height:25%;
+width:80%;
+position:relative;
+z-index:14;
 display: flex;
 justify-content: center;
 align-items: center;
