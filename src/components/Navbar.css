@@ -157,11 +157,7 @@ header.white .nav-link > a {
 }
 
 .hamburger-container {
-  position:absolute;
-  top: 50%;
-  right: 30px;
   margin-inline: 10px;
-  transform: translateY(-50%);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -211,11 +207,11 @@ header.white .hamburger div::after {
 #check {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 1.75rem;
   margin-inline: 10px;
   transform: translateY(-50%);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   z-index: 99991;
   cursor: pointer;
   opacity: 0;
