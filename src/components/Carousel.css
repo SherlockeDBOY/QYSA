@@ -47,6 +47,7 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
+  z-index: 8;
   box-shadow: 0px 2px 8px rgba(28, 27, 37, 0.2);
 }
 
@@ -69,8 +70,8 @@
   -o-transform: scale(1);
 }
 
-.button.filled {
-  background: var(--grad-bg);
+.bttn.filled {
+  background: var(--grad-bg-1);
   background: var(--grad);
   color: #fff;
   transform: scale(1);
@@ -88,7 +89,7 @@
   -o-transform: scale(1);
 }
 
-.button.filled:hover {
+.bttn.filled:hover {
   transform: scale(1.12);
   -webkit-transform: scale(1.12);
   -moz-transform: scale(1.12);
