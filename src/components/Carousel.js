@@ -164,7 +164,7 @@ const Carousel = ({slides}) => {
                                     </h1>
                                     <ContentBtn>
                                         <a href="/"  className="button outline">Explore more</a>
-                                        <a href="/"  className="button filled">All Projects</a>
+                                        <a href="/"  className="button filled">All Services</a>
                                     </ContentBtn>
                                 </HeroContent>
                                 </>
