@@ -157,6 +157,7 @@ header.white .nav-link > a {
 }
 
 .hamburger-container {
+  position:relative;
   margin-inline: 15px;
   display: flex;
   justify-content: flex-start;
@@ -164,6 +165,9 @@ header.white .nav-link > a {
 }
 
 .hamburger {
+  position:absolute;
+  top: 50%;
+  right:1.6rem;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
