@@ -4,7 +4,6 @@ import {IoArrowForward, IoArrowBack} from "react-icons/io5";
 import styled, {css} from "styled-components/macro";
 
 const HeroSection = styled.section`
-    background:#f7d0d5;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -23,8 +22,8 @@ const HeroImage = styled.img`
 `;
 
 const HeroContent = styled.div`
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 90%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -56,7 +55,6 @@ width:45px;
 height: 45px;
 cursor:pointer;
 color:#fff;
-// font-size:18px;
 background:#0004a0;
 padding:10px 15px !important;
 border-radius:40px;
@@ -76,10 +74,6 @@ justify-content: center;
 align-items: center;
 @media screen and (max-width: 768px) {
     flex-direction: column;
-}
-
-a{
-    margin: 12.5px 10px;
 }
 `;
 
@@ -153,22 +147,24 @@ const Carousel = ({slides}) => {
             <div className="slider">
                 {slides.map((slide, index) => {
                     return (
+                        <React.Fragment>
                         <div className={index === current ? 'slide current' : 'slide'} key={index}>
                             {index === current &&(
-                                <>
+                                <React.Fragment>
                                 <HeroImage src={slide.image}/>
-                                <HeroContent>
-                                    <h1>
-                                        {slide.title}
-                                    </h1>
-                                    <ContentBtn>
-                                        <a href="/"  className="button outline">Explore more</a>
-                                        <a href="/"  className="button filled">All Projects</a>
-                                    </ContentBtn>
-                                </HeroContent>
-                                </>
+                                </React.Fragment>
                             )}
                         </div>
+                            <HeroContent>
+                                        <h1>
+                                            {slide.title}
+                                        </h1>
+                                        <ContentBtn>
+                                            <a href="/"  className="bttn filled out">Explore more</a>
+                                            <a href="/"  className="bttn filled">All Projects</a>
+                                        </ContentBtn>
+                            </HeroContent>
+                        </React.Fragment>
                     );
                 })}
                 <SliderButtons>
