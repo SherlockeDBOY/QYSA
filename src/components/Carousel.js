@@ -1,5 +1,4 @@
 import React, {useState, useRef, useEffect} from 'react';
-import "./Home.css";
 import "./Carousel.css";
 import {IoArrowForward, IoArrowBack} from "react-icons/io5";
 import styled, {css} from "styled-components/macro";
