@@ -316,6 +316,10 @@ header.white .hamburger div::after {
   .hamburger{
   display:block
   }
+  .icons .fa-search,
+  .icons .fa-user {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 420px) {
